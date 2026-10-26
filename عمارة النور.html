@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>عمارة النور – دليل السكان</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F3F6F6;--card:#fff;--ink:#12343B;--mute:#5B6E73;--wall:#2F5D66;--wall2:#3E7480;--glass:#DCE9EC;--light:#F2C14E;--ok:#1E7A4F;--no:#A33B3B;--line:#D5DFE1;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F1D20;--card:#162A2E;--ink:#E6F0F1;--mute:#9FB4B8;--wall:#4E8794;--wall2:#5F9CA9;--glass:#1B3A40;--line:#274349;--ok:#5BC08C;--no:#E08080}}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans Arabic",Tahoma,Arial,sans-serif;line-height:1.8}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+header b{font-size:1.2rem}
+nav a{margin-inline-start:18px;color:var(--mute);text-decoration:none}
+nav a:hover{color:var(--ink)}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center;padding:24px 0 56px}
+h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.25;margin:0 0 14px}
+.hero p{color:var(--mute);max-width:46ch;margin:0 0 22px}
+.btn{display:inline-block;background:var(--wall);color:#fff;padding:12px 26px;border-radius:8px;text-decoration:none;font-weight:700}
+.facts{display:flex;gap:26px;margin-top:26px;color:var(--mute);font-size:.95rem}
+.facts b{display:block;color:var(--ink);font-size:1.3rem}
+.bld{max-width:340px;margin:0 auto;width:100%}
+.roof{height:14px;background:var(--ink);border-radius:4px 4px 0 0;margin:0 -8px}
+.floor{display:grid;grid-template-columns:1fr 1fr;gap:14px;width:100%;border:0;background:var(--wall);padding:14px 22px;cursor:pointer;font:inherit;color:#fff;border-top:3px solid var(--bg);position:relative;text-align:center}
+.floor:hover{background:var(--wall2)}
+.floor[aria-pressed="true"]{background:var(--wall2);outline:3px solid var(--light);outline-offset:-3px}
+.floor i{display:block;height:30px;background:var(--glass);border-radius:2px 2px 0 0}
+.floor[aria-pressed="true"] i{background:var(--light)}
+.floor span{position:absolute;inset-inline-start:-4px;top:50%;transform:translate(100%,-50%);font-size:.75rem;opacity:.85}
+.base{height:46px;background:var(--ink);display:flex;justify-content:center;align-items:flex-end}
+.base i{width:44px;height:34px;background:var(--glass);border-radius:22px 22px 0 0}
+section{padding:48px 0;border-top:1px solid var(--line)}
+h2{font-size:1.7rem;margin:0 0 6px}
+.sub{color:var(--mute);margin:0 0 26px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.tabs button{font:inherit;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:8px 18px;border-radius:999px;cursor:pointer}
+.tabs button[aria-pressed="true"]{background:var(--wall);color:#fff;border-color:var(--wall)}
+.apts{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.apt{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:20px}
+.apt h3{margin:0 0 10px;display:flex;justify-content:space-between;align-items:center}
+.acts{display:flex;gap:10px;margin-top:16px}.acts .btn{padding:8px 20px;flex:1;text-align:center}.acts .wa{background:#1E7A4F}
+.apt dl{display:grid;grid-template-columns:auto 1fr;gap:4px 16px;margin:0}
+.apt dt{color:var(--mute)}.apt dd{margin:0}
+.feat{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:22px}
+.feat div{border-inline-start:3px solid var(--light);padding-inline-start:14px}
+.feat b{display:block}.feat a{color:var(--mute);text-decoration:none}
+.contact{background:var(--wall);color:#fff;border-radius:12px;padding:32px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+.contact h2{margin:0}.contact p{margin:4px 0 0;opacity:.85}
+.contact .btn{background:var(--light);color:#12343B}
+footer{text-align:center;color:var(--mute);padding:28px 0 40px;font-size:.9rem}
+@media(max-width:760px){.hero{grid-template-columns:1fr}nav{display:none}.bld{order:-1;max-width:260px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+a:focus-visible,button:focus-visible{outline:3px solid var(--light);outline-offset:2px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><b>عمارة النور</b><nav><a href="#flats">السكان</a><a href="#features">أرقام مهمة</a></nav></header>
+
+<div class="hero">
+<div>
+<h1>دليل سكان<br>عمارة النور</h1>
+<p>اضغط على أي دور في الرسم لتشوف سكانه وتكلمهم بنقرة واحدة، اتصال أو واتساب.</p>
+<a class="btn" href="#flats">شوف السكان</a>
+<div class="facts"><div><b>٥</b>أدوار</div><div><b>١٠</b>شقق</div></div>
+</div>
+<div class="bld" id="bld" role="group" aria-label="اختر الدور"></div>
+</div>
+
+<section id="flats">
+<h2>السكان حسب الدور</h2>
+<p class="sub">اختر الدور وكلم الساكن بنقرة واحدة.</p>
+<div class="tabs" id="tabs"></div>
+<div class="apts" id="apts" aria-live="polite"></div>
+</section>
+
+<section id="features">
+<h2>أرقام مهمة</h2>
+<p class="sub">للطوارئ والصيانة.</p>
+<div class="feat">
+<div><b>بواب العمارة</b><a href="tel:01000000101" dir="ltr">01000000101</a></div>
+<div><b>صيانة الأسانسير</b><a href="tel:01000000102" dir="ltr">01000000102</a></div>
+<div><b>كهربائي</b><a href="tel:01000000103" dir="ltr">01000000103</a></div>
+<div><b>سباك</b><a href="tel:01000000104" dir="ltr">01000000104</a></div>
+<div><b>الشرطة</b><a href="tel:122" dir="ltr">122</a></div>
+<div><b>الإسعاف</b><a href="tel:123" dir="ltr">123</a></div>
+</div>
+</section>
+
+<section id="contact">
+<div class="contact">
+<div><h2>ملاحظة أو شكوى؟</h2><p>كلم مسؤول العمارة.</p></div>
+<a class="btn" href="tel:01000000000" dir="ltr">01095152443</a>
+</div>
+</section>
+<footer>عمارة النور – جميع الحقوق محفوظة</footer>
+</div>
+
+<script>
+var floors=[
+{name:"الدور الأول",apts:[
+ {id:"1أ",who:"احمد عماد",tel:"01095152443"},
+ {id:"2ب",who:"محمد احمد",tel:"01000968470"}]},
+{name:"الدور الثاني",apts:[
+ {id:"3أ",who:"عبد الله",tel:"01008520975"},
+ {id:"4ب",who:"علي",tel:"01000935668"}]},
+{name:"الدور الثالث",apts:[
+ {id:"5أ",who:"فتحي",tel:"01000000031"},
+ {id:"6ب",who:"عبد الرحمن",tel:"01000000032"}]},
+{name:"الدور الرابع",apts:[
+ {id:"7أ",who:"محمد",tel:"01000000041"},
+ {id:"8ب",who:"سكر",tel:"01000000042"}]},
+{name:"الدور الخامس",apts:[
+ {id:"9أ",who:"سعد",tel:"01000000051"},
+ {id:"10ب",who:"محمود",tel:"01000000052"}]}
+];
+var cur=0,bld=document.getElementById("bld"),tabs=document.getElementById("tabs"),out=document.getElementById("apts");
+function draw(){
+ var h='<div class="roof"></div>';
+ for(var i=4;i>=0;i--)h+='<button class="floor" data-i="'+i+'" aria-pressed="'+(i===cur)+'" aria-label="'+floors[i].name+'"><i></i><i></i><span>'+(i+1)+'</span></button>';
+ bld.innerHTML=h+'<div class="base"><i></i></div>';
+ tabs.innerHTML=floors.map(function(f,i){return'<button data-i="'+i+'" aria-pressed="'+(i===cur)+'">'+f.name+'</button>'}).join("");
+ out.innerHTML=floors[cur].apts.map(function(a){return'<article class="apt"><h3>شقة '+a.id+'</h3><dl><dt>الساكن</dt><dd>'+a.who+'</dd><dt>الرقم</dt><dd dir="ltr" style="text-align:right">'+a.tel+'</dd></dl><div class="acts"><a class="btn" href="tel:'+a.tel+'">اتصال</a><a class="btn wa" href="https://wa.me/2'+a.tel+'">واتساب</a></div></article>'}).join("");
+}
+function pick(e){var b=e.target.closest("button[data-i]");if(!b)return;cur=+b.dataset.i;draw()}
+bld.addEventListener("click",pick);tabs.addEventListener("click",pick);
+draw();
+</script>
+</body>
+</html>
